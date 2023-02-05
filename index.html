@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My CV</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="profile" id="profile_ripple">
+            <div class="left">
+                <div class="avatar">
+                    <img src="./images/LEMINHQUI.jpg" alt="">
+                </div>
+                <div class="Title">
+                    <h2 class="Title-name">Lê Minh Quí</h2>
+                    <p class="headline loading-bar">
+                        <span class="sub-title">
+                            <b class="is-visible">Software Engineer</b>
+                            <span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <ul class="contact">
+                    <li>
+                        <i class="fa fa-mobile"></i>
+                        <strong>Phone : </strong> +84 568 789 257
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <strong>Email : </strong> lmqui.work@gmail.com
+                    </li>
+                    <li>
+                        <i class="fa fa-code"></i>
+                        <strong>Github : </strong> lminhqui.github
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="information" id="information_ripple">
+
+            <button class="tablink" onclick="openPage('About', this, '#4f4d58')" id="defaultOpen">About Me</button>
+            <button class="tablink" onclick="openPage('Resume', this, '#4f4d58')">Resume</button>
+            <button class="tablink" onclick="openPage('Contact', this, '#4f4d58')">Contact</button>
+
+            <div id="About" class="tabcontent">
+                <div class="about-tab">
+                    <div class="about-tab_container">
+                        <div class="about-content">
+                            <div class="about-content_contain">
+                                <div class="about-content_title">About me</div>
+                            </div>
+                            <div class="about-content_describtion">
+                                I'm a QA with 6 months of experience in Python, Robot Framework. Learning new
+                                languages and technologies is what I am passionate about. I am considered a team player
+                                because I like to help others and work well within a group.
+                            </div>
+                        </div>
+                        <div class="about-info">
+                            <div class="about-info_title">What I'm Doing</div>
+                            <div class="about-info_job">
+                                <div class="about-info_job_title">Tester</div>
+                                <div class="about-info_job_describtion">I can work well as a QA using
+                                    Robot Framework ,Python or C++</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Resume" class="tabcontent">
+                <div class="about-tab">
+                    <div class="about-tab_container">
+                        <div class="about-content">
+                            <div class="about-content_contain">
+                                <div class="about-content_title">Resume</div>
+                            </div>
+                        </div>
+                        <div class="about-info">
+                            <div class="about-info_contain">
+                                <div class="about-info_contain__title">
+                                    <img src="./images/icon-education.svg" alt="">
+                                    <div class="resume_title">Education</div>
+                                </div>
+                                <div class="about-info_contain__timeline">
+                                    <article class="timeline__item">
+                                        <h5 class="title title--h5 timeline__title">
+                                            Can Tho University
+                                        </h5>
+                                        <span class="timeline__period">2017 — Present</span>
+                                        <p class="timeline__description">
+                                            Major : Software Engineer
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-info">
+                            <div class="about-info_contain">
+                                <div class="about-info_contain__title">
+                                    <img src="./images/icon-experience.svg" alt="">
+                                    <div class="resume_title">Experience</div>
+                                </div>
+                                <div class="about-info_contain__timeline">
+                                    <article class="timeline__item">
+                                        <h5 class="title title--h5 timeline__title">
+                                            TMA - Solutions
+                                        </h5>
+                                        <span class="timeline__period">2022 — Present</span>
+                                        <p class="timeline__description">
+                                            Write automation testing, manual testing and find bug , fix bug.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contain-about-info">
+                            <div class="about-info flex-1">
+                                <div class="about-info_contain">
+                                    <div class="about-info_contain__title">
+                                        <img src="./images/icon-experience.svg" alt="">
+                                        <div class="resume_title">Work Skills</div>
+                                    </div>
+                                    <div class="about-info_contain__timeline">
+                                        <article class="timeline__item resume">
+                                            <h5 class="title title--h5 timeline__title resume_title">
+                                                Have knowlegde in Robot Framework
+                                            </h5>
+                                        </article>
+                                        <article class="timeline__item resume">
+                                            <h5 class="title title--h5 timeline__title resume_title">
+                                                Have theory basic in C++
+                                            </h5>
+                                        </article>
+                                        <article class="timeline__item resume">
+                                            <h5 class="title title--h5 timeline__title resume_title">
+                                                Have theory basic in Reactjs
+                                            </h5>
+                                        </article>
+                                        <article class="timeline__item resume">
+                                            <h5 class="title title--h5 timeline__title resume_title">
+                                                Have theory basic in Python
+                                            </h5>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info flex-2">
+                                <div class="about-info_contain">
+                                    <div class="about-info_contain__title">
+                                        <img src="./images/icon-experience.svg" alt="">
+                                        <div class="resume_title">Other Skills</div>
+                                    </div>
+                                    <div class="about-info_contain__timeline">
+                                        <article class="timeline__item resume">
+                                            <h5 class="title title--h5 timeline__title resume_title">
+                                                English Communication Basic
+                                            </h5>
+                                        </article>
+                                        <article class="timeline__item resume">
+                                            <h5 class="title title--h5 timeline__title resume_title">
+                                                Teamwork
+                                            </h5>
+                                        </article>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Contact" class="tabcontent">
+                <div class="about-tab">
+                    <div class="about-tab_container">
+                        <div class="about-content">
+                            <div class="about-content_contain">
+                                <div class="about-content_title">Contact</div>
+                            </div>
+                        </div>
+                        <form id="form">
+                            <div class="input_group">
+                                <input type="text" name="name" placeholder="Your Full Name" required>
+                            </div>
+                            <div class="input_group">
+                                <input type="email" name="email" placeholder="Your email" required>
+                            </div>
+                            <div class="input_group">
+                                <input type="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="input_group">
+                                <textarea name="content" placeholder="Your message" required></textarea>
+                            </div>
+                            <div class="input_group">
+
+                                <button id="submit"><i class="fa fa-paper-plane"></i>Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./plugins/ripples.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
